@@ -54,7 +54,8 @@ footnote_link: https://github.com/yaoyao-liu/minimal-light
 
 # Analytics
 # clustrmaps_id: HV0rAUdAxpfEQLOsVs0FcJTR2rKVI5sEQUZIDM-N_HY
-google_analytics: G-FFMFG6JERR
+google_analytics:
+  id: "G-FFMFG6JERR"
 
 # Files excluded from site build
 exclude:
