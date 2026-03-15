@@ -1,12 +1,14 @@
 <h1 id="publications"></h1>
 
-<h2 style="margin: 60px 0px -15px;">Publications <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=Qi2PSmEAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://dblp.org/pid/12/10033-1.html" target="_blank" style="font-size:15px;">DBLP</a><temp style="font-size:15px;">]</temp></h2>
-
+<h2 style="margin: 60px 0px 10px;">Notable Publications</h2>
 
 <div class="publications">
 <ol class="bibliography">
 
-{% for link in site.data.publications.main %}
+{% assign ranked_pubs = site.data.publications.main | sort: "citations" | reverse %}
+{% assign top_pubs = ranked_pubs | slice: 0, 5 %}
+
+{% for link in top_pubs %}
 
 <li>
 <div class="pub-row">

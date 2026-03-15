@@ -1,42 +1,61 @@
 # Basic Information 
-title: Yaoyao Liu
-position: Assistant Professor
-affiliation: University of Illinois
-affiliation_link: https://www.illinois.edu/
-affiliation_logo: ./assets/img/illinois.svg
-email: lyy (at) illinois.edu
+title: Minh Pham-Dinh
+position: Incoming PhD Student
+affiliation: University of Utah (Starting Fall 2026)
+affiliation_link: https://www.cs.utah.edu/
+affiliation_logo: ./assets/img/dai.png
+email: mhpham26 (at) colby.edu
 
 # Search Engine Optimization (SEO)
-keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
-canonical: https://yaoyaoliu.web.illinois.edu
-description: Yaoyao Liu is an assistant professor at the University of Illinois Urbana-Champaign. His research lies in meta-learning, incremental learning, and image generation.
+keywords: 
+  minh pham-dinh,
+  minh phd,
+  phd student university of utah,
+  vietnamese phd student ai,
+  embodied ai researcher,
+  robotics researcher,
+  vision language models,
+  robot learning,
+  visual place recognition,
+  scene graph robotics,
+  knowledge graphs ai,
+  AI planning agents,
+  davis ai research,
+  colby college computer science
+
+canonical: https://minhphd.github.io
+
+description: >
+  Minh Pham-Dinh is an incoming PhD student in Computer Science at the University of Utah.
+  His research focuses on embodied AI, robot learning, vision-language models,
+  scene graph representations, and structured knowledge for intelligent agents.
+  He previously conducted research at the Davis Institute for Artificial Intelligence
+  at Colby College.
 
 # The option is used to enable the Illinois template.
-enable_hopkins_logo: true
+enable_hopkins_logo: false
 
 # The option is used to show the last update time.
-enable_last_update: false
+enable_last_update: true
 
 # Links
-link_type: icon #text/icon
-google_scholar: https://scholar.google.com/citations?user=Qi2PSmEAAAAJ
-github_link: https://github.com/yaoyao-liu/
-linkedin: https://www.linkedin.com/in/liuyaoyao/
-twitter: https://twitter.com/YaoyaoLiu1/
+link_type: icon
+google_scholar: https://scholar.google.com/citations?user=u4Q9qJUAAAAJ&hl=en
+github_link: https://github.com/minhphd
+linkedin: https://www.linkedin.com/in/marcpd/
+twitter: https://x.com/phamdhminh2004
 
 # Images 
-avatar: https://img.yliu.me/avatar_new.jpg
+avatar: assets/img/profile.png
 
 # Footnotes
-footnote: Feel free to use my website's source code.
+footnote: Website built from the minimal-light academic template
 footnote_link: https://github.com/yaoyao-liu/minimal-light
 
 # Analytics
-# Please remove the following lines about analytics services if you fork my project. 
-# Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
 clustrmaps_id: HV0rAUdAxpfEQLOsVs0FcJTR2rKVI5sEQUZIDM-N_HY
 
-# The following files will be removed from the generated website.
+# Files excluded from site build
 exclude:
   - build.sh
   - Gemfile
