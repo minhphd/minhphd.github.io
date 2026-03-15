@@ -1,5 +1,5 @@
 .topnav {
-  background-color: white;
+  background-color: black;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -31,7 +31,7 @@
 }
 
 .topnav a.normal {
-  color: black;
+  color: white;
   text-align: center;
   padding: 8px 10px;
   text-decoration: none;
