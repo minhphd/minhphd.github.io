@@ -4,17 +4,22 @@ main:
   #   url: teaching/
   #   right: true 
 
+  - title: "Home"
+    url: ./
+
+  - title: "Publications"
+    url: publications/
+
   - title: "Services"
     url: services/
 
+  - title: "CV"
+    url: cv/
+    
   # - title: "Talks"
   #   url: talks/
 
   #- title: "Teaching"
   #  url: ./teaching.html
 
-  - title: "Publications"
-    url: publications/
 
-  - title: "Home"
-    url: ./
