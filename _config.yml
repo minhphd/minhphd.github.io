@@ -44,6 +44,7 @@ google_scholar: https://scholar.google.com/citations?user=u4Q9qJUAAAAJ&hl=en
 github_link: https://github.com/minhphd
 linkedin: https://www.linkedin.com/in/marcpd/
 twitter: https://x.com/phamdhminh2004
+bluesky: https://bsky.app/profile/minhphd.github.io
 
 # Images 
 avatar: assets/img/profile.png
@@ -56,6 +57,9 @@ footnote_link: https://github.com/yaoyao-liu/minimal-light
 # clustrmaps_id: HV0rAUdAxpfEQLOsVs0FcJTR2rKVI5sEQUZIDM-N_HY
 google_analytics:
   id: "G-FFMFG6JERR"
+
+#
+include: [".well-known"]
 
 # Files excluded from site build
 exclude:
