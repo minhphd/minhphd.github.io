@@ -1,5 +1,5 @@
 .topnav {
-  background-color: black;
+  background-color: white;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -27,11 +27,11 @@
 .topnav #myLinks {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .topnav a.normal {
-  color: white;
+  color: black;
   text-align: center;
   padding: 8px 10px;
   text-decoration: none;

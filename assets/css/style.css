@@ -3,6 +3,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 body { background-color: #fff; padding: 0px; font: 16.0px/1.5 "Crimson Pro", serif; color: #595959; font-weight: 400; margin: 0; }
 
+.hero {
+  padding: 72px 0 48px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero-inner {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.hero-kicker {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #b91c1c;
+}
+
+.hero-copy h1 {
+  margin-bottom: 10px;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.hero-copy p {
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  text-decoration: none;
+  color: #111827;
+  background: #fff;
+  font-weight: 600;
+}
+
+.hero-btn-primary {
+  background: #b91c1c;
+  color: #fff;
+  border-color: #b91c1c;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pub-row { display: flex; align-items: center; }
 
 .social-icons a { display: inline-block; height: 2.4rem; width: 2.4rem; background-color: transparent; color: #13294B !important; border-radius: 100%; text-align: center; font-size: 1.15rem; line-height: 2.5rem; margin-right: 1rem; }
@@ -57,7 +130,7 @@ papertitle { font-weight: 600; font-size: 100%; }
 
 .image.avatar:before { display: none; }
 
-.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; }
+.image.avatar img { border-radius: 0%; width: 60%; padding: 20px; }
 
 #header .image.avatar { margin: 0 0 1em 0; width: 8.00em; }
 

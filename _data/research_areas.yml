@@ -1,0 +1,19 @@
+- id: embodied
+  title: Embodied Intelligence
+  short: Agents that ground reasoning in physical interaction and world structure.
+  detail: I study how embodied agents can build and use structured representations of the world to plan, localize, and act robustly in open environments.
+
+- id: scenegraphs
+  title: Semantic Scene Graphs
+  short: Structured spatial-semantic representations for navigation and understanding.
+  detail: I am interested in scene graphs as an interpretable interface between perception and decision making, especially under viewpoint shift and embodiment mismatch.
+
+- id: assistive
+  title: Assistive Robotics
+  short: Human-centered navigation and robotic assistance for accessibility.
+  detail: My work explores semantic world modeling and language-guided grounding for assistive robotic systems in real indoor environments.
+
+- id: ot
+  title: Optimal Transport for Robotics
+  short: Matching structured environments under semantic and geometric uncertainty.
+  detail: I use transport-based methods to compare scene representations across scans, embodiments, and partial observations.

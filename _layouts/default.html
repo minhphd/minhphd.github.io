@@ -78,18 +78,17 @@
 
     <div class="topnav" id="myTopnav">
       <div class="nav-inner">
-        <a href="{{ site.affiliation_link }}"><img width="auto" src="../{{ site.affiliation_logo }}" style="border-radius: 8px;"></a>
+        <a href="{{ site.affiliation_link }}"><img width="auto" src="../{{ site.affiliation_logo }}"></a>
 
         <div id="myLinks">
         {% include navigation.md %}
         </div>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction();reverseLinks()">
-          <i class="fa fa-bars" style="color: #fff;"></i>
+          <i class="fa fa-bars" style="color: black;"></i>
         </a>
       </div>
     </div>
-    
 
     <script src="../assets/js/vanilla-back-to-top.min.js"></script>
     <script>addBackToTop({
@@ -110,6 +109,7 @@
         }
     </style>
     
+
     <div class="wrapper">
       <header>
         
@@ -183,23 +183,23 @@
       </header>
       <section>
 
-      {{ content }}
+        {{ content }}
 
-      <br>
+        <br>
 
-      {% if site.enable_last_update %}
-      <small>Last Update:
-            <script>
-              const monthNames = ["January", "Februray", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
-              ];
-              var modiDate = new Date(document.lastModified);
-              var showAs = modiDate.getDate() + ". " + monthNames[modiDate.getMonth()] + " " + modiDate.getFullYear();
-              document.write(showAs);
-            </script>
-      </small> 
-      {% endif %}
+        {% if site.enable_last_update %}
+        <small>Last Update:
+              <script>
+                const monthNames = ["January", "Februray", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+                ];
+                var modiDate = new Date(document.lastModified);
+                var showAs = modiDate.getDate() + ". " + monthNames[modiDate.getMonth()] + " " + modiDate.getFullYear();
+                document.write(showAs);
+              </script>
+        </small> 
+        {% endif %}
 
-      <br>
+        <br>
       
       </section>
       <footer>
