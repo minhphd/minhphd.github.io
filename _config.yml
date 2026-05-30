@@ -1,10 +1,10 @@
 # Basic Information 
 title: Minh Pham-Dinh
-position: Incoming PhD Student
-affiliation: University of Utah <br> (Starting Fall 2026)
+position: PhD Student
+affiliation: University of Utah
 affiliation_link: https://www.cs.utah.edu/
 affiliation_logo: ./assets/img/utah_horizon.svg
-email: mhpham26 (at) colby.edu
+email: m.pham-dinh (at) utah.edu
 
 # Search Engine Optimization (SEO)
 keywords: 
@@ -29,8 +29,6 @@ description: >
   Minh Pham-Dinh is an incoming PhD student in Computer Science at the University of Utah.
   His research focuses on embodied AI, robot learning, vision-language models,
   scene graph representations, and structured knowledge for intelligent agents.
-  He previously conducted research at the Davis Institute for Artificial Intelligence
-  at Colby College.
 
 # The option is used to enable the Illinois template.
 enable_hopkins_logo: false
