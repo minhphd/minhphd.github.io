@@ -155,7 +155,7 @@ assets/
     cities.js              # the five city objects: name, coords, silhouette path, caption
 ```
 
-The homepage `index.md` adds one line: `{% include travelers-sky.html %}` between the bio block and the News list.
+The homepage `index.md` adds one line: `{% raw %}{% include travelers-sky.html %}{% endraw %}` between the bio block and the News list.
 
 ### 6.3 Star rendering
 
