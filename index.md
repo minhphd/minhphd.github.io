@@ -6,9 +6,9 @@ layout: default
 
 <h2 style="margin: 80px 0px 10px;"></h2>
 
-I am an AI researcher at the University of Utah building the next frontier of autonomous systems: **agents that don't just reason, but *act*.** Working under the supervision of Professor [Kenneth Marino]('https://kennethmarino.com/'), my work sits at the intersection of **robotics and advanced computer-use**, engineering systems that mirror human cognitive efficiency. We are moving beyond rigid, single-task models to develop highly transferable agents capable of autonomously deducing, internalizing, and executing complex skills across entirely new domains. The goal isn't just smarter AI; it's infinitely scalable autonomy.
+I am a **PhD student at the University of Utah**, advised by Professor [Kenneth Marino]('https://kennethmarino.com/'), working on **embodied lifelong learning**. What excites me most right now is **making robots** truly agentic: language-conditioned systems that reason about a task, plan over long horizons, act, and communicate and not just execute policies. Language agents have developed a powerful continual learning harness, the ability to tool use, iterative planning, reflection, and understand feedbacks. My research aims to bring that same harness to embodied agents, so that robots inherit the reasoning and adaptability we now take for granted on the web.
 
-Previously, I conducted research at the Davis Institute for Artificial Intelligence under the mentorship of [Dr. Michael Yankoski](https://www.linkedin.com/in/michaelyankoski/). I also completed my honors thesis at the INSITE Lab, advised by Professor [Stacy Doore](https://stacyadoore.com/), where I studied semantic world modeling and vision-and-language navigation for assistive robotics.
+Before Utah, I conducted AI and assistive robotics research at the Davis Institute for Artificial Intelligence and the INSITE Lab at [Colby College]('https://www.colby.edu/'). I'm always open to collaborations and research opportunities in robot learning.
 
 {% include_relative _includes/news.md %}
 

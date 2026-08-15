@@ -1,7 +1,7 @@
 <h2 style="margin: 60px 0px 10px;">News</h2>
 
 <ul>
-  <li><strong>[Mar. 2026]</strong> I will join the <a href="https://www.utah.edu/"> University of Utah </a> as a PhD student in Computer Science.</li>
+  <li><strong>[August. 2026]</strong> I joined the <a href="https://www.utah.edu/"> University of Utah </a> as a PhD student in Computer Science.</li>
 
   <li><strong>[Nov. 2025]</strong> I presented <em>DAVIS</em> at <a href="https://2025.emnlp.org/"> EMNLP 2025 </a>.</li>
 
