@@ -5,6 +5,7 @@
 <h4 style="margin:0 10px 0;">Conference Reviewers</h4>
 
 <ul style="margin:0 0 5px;">
+  <li><a href="https://neurips.cc/Conferences/2026"><autocolor>Conference on Neural Information Processing Systems (NeurIPS) — Reviewer, 2026</autocolor></a> <strong><i style="color:#e74d3c; font-weight:600">Top Reviewer (top 8%)</i></strong></li>
   <li><a href="https://lrec2026.info/"><autocolor>Language Resources and Evaluation Conference (LREC) — Reviewer, 2026</autocolor></a></li>
   <li><a href="https://aistats.org/"><autocolor>International Conference on Artificial Intelligence and Statistics (AISTATS) — Reviewer, 2026</autocolor></a></li>
   <li><a href="https://aaai.org/conference/aaai/aaai-26/"><autocolor>AAAI Conference on Artificial Intelligence (AAAI) — Program Committee, 2026</autocolor></a></li>
