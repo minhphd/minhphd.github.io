@@ -1,0 +1,22 @@
+{% assign quotes = site.data.reviewer2 %}
+{% if quotes.size > 0 %}
+<blockquote class="r2-line">
+  <span id="r2-text">&ldquo;{{ quotes[0].quote }}&rdquo;</span> <span class="r2-by">&mdash; Reviewer 2 <button type="button" id="r2-refresh" title="Another one" aria-label="Show another Reviewer 2 quote">&#8635;</button></span>
+  <a class="note r2-credit" href="https://jctjad.github.io/" target="_blank" rel="noopener"><svg class="r2-arrow-up" viewBox="0 0 22 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 28C6 22 4 13 9 3"/><path d="M3 9l6-6 5 7"/></svg>idea from my college buddy Jacob<svg class="r2-arrow-right" viewBox="0 0 34 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c9-4 19-3 28 7"/><path d="M22 14l8 0 -1-8"/></svg></a>
+</blockquote>
+<script>
+  (function () {
+    var quotes = {{ quotes | map: "quote" | jsonify }};
+    var el = document.getElementById('r2-text');
+    var last = -1;
+    function show() {
+      var i;
+      do { i = Math.floor(Math.random() * quotes.length); } while (quotes.length > 1 && i === last);
+      last = i;
+      el.textContent = '“' + quotes[i] + '”';
+    }
+    show();
+    document.getElementById('r2-refresh').addEventListener('click', show);
+  })();
+</script>
+{% endif %}

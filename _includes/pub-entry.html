@@ -1,0 +1,31 @@
+{% assign pub = include.pub %}
+{% assign primary = pub.pdf | default: pub.website %}
+{% assign first = pub.image | slice: 0 %}
+{% if first == "/" %}{% assign thumb = pub.image | relative_url %}{% else %}{% assign thumb = pub.image %}{% endif %}
+<article class="pub">
+  <a class="pub-thumb" href="{{ primary }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"{% if pub.thumb_note %} data-a7-line="{{ pub.thumb_note | escape }}"{% endif %}>
+    {% if pub.video %}
+    <video src="{{ pub.video | relative_url }}" poster="{{ thumb }}" muted loop playsinline preload="none" data-autoplay></video>
+    {% else %}
+    <img src="{{ thumb }}" alt="" loading="lazy">
+    {% endif %}
+    {% if pub.conference_short %}<span class="pub-badge{% if pub.conference_short == 'Preprint' %} is-preprint{% endif %}">{{ pub.conference_short }}</span>{% endif %}
+    {% if pub.new %}<span class="pub-new">new</span>{% endif %}
+  </a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="{{ primary }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
+    <p class="pub-authors">{{ pub.authors }}</p>
+    <p class="pub-venue">{{ pub.conference }}</p>
+    <p class="pub-links">
+      {% if pub.pdf %}<a class="bracket" href="{{ pub.pdf }}" target="_blank" rel="noopener">[Paper]</a>{% endif %}
+      {% if pub.website %}<a class="bracket" href="{{ pub.website }}" target="_blank" rel="noopener">[Website]</a>{% endif %}
+      {% if pub.code %}<a class="bracket" href="{{ pub.code }}" target="_blank" rel="noopener">[Code]</a>{% endif %}
+      {% if pub.data %}<a class="bracket" href="{{ pub.data }}" target="_blank" rel="noopener">[Dataset]</a>{% endif %}
+      {% if pub.demo %}<a class="bracket" href="{{ pub.demo }}" target="_blank" rel="noopener">[Live demo]</a>{% endif %}
+      {% if pub.page %}<a class="bracket" href="{{ pub.page }}" target="_blank" rel="noopener">[Project Page]</a>{% endif %}
+      {% if pub.bibtex %}<a class="bracket" href="{{ pub.bibtex }}" target="_blank" rel="noopener">[BibTeX]</a>{% endif %}
+      {% if pub.notes %}<span class="pub-note">{{ pub.notes }}</span>{% endif %}
+      {% if pub.others %}{{ pub.others }}{% endif %}
+    </p>
+  </div>
+</article>

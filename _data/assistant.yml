@@ -1,0 +1,96 @@
+# Lines for clip-7b, the paperclip in the bottom-right corner.
+# greeting: shown once per visit, a few seconds after the page loads.
+# hover:    shown when the cursor rests on a part of the page (keys are matched in assets/js/assistant.js;
+#           any element with data-a7="key" also works). A paper's thumbnail can have its own line via
+#           `thumb_note` in _data/publications.yml; pub-thumb is the fallback.
+# sections: used by [say something], and on touch screens when a section scrolls into view.
+# idle:     shown if the visitor sits still for a while, and when someone clicks the paperclip.
+
+greeting:
+  - "It looks like you're reading a PhD student's website. Would you like help lowering your expectations?"
+  - "Hi! I'm clip-7b. I was trained on this site, which explains a lot."
+  - "Welcome! I have 7 billion parameters and zero publications. Minh has a few. We're basically peers."
+
+hover:
+  self:
+    - "Please don't drag me. Drag & gesture is my weakest skill."
+    - "Yes, I'm watching your cursor. It's literally my only job."
+  photo:
+    - "That's him. The photo was taken right before his PhD."
+    - "He is actually 21 in this picture, but the hair makes him look 30."
+    - "Minh's actually single, btw. He loves baking, cooking, and playing volleyball."
+  name:
+    - "Yes, the last name has 2 words."
+  subtitle:
+    - "\"More capable and adaptable.\" Am I not good enough for you?"
+  r2:
+    - "Reviewer 2 again. I'd click the arrow, but it only gets worse."
+    - "Every quote here is real. Emotionally."
+    - "This bit was stolen from Jacob, Minh's friend of four years since undergrad. With love, and without permission."
+  interests:
+    - "Highlighted, so you know it's important. I'd have used a paperclip."
+  scholar:
+    - "Google Scholar: refreshed more often than his inbox."
+  cv:
+    - "The CV. The only document he revises more than his papers."
+  github:
+    - "GitHub: home of final_v2_really_final.py. Allegedly."
+  linkedin:
+    - "Currently employed by a GPU. Pay is terrible."
+  social:
+    - "Mostly memes, with the occasional paper promotion."
+  top-reviewer:
+    - "Top 8% reviewer. Somewhere, an author is still recovering."
+  fellowship:
+    - "A fellowship! Funding secured. GPUs remain on backorder."
+  pub-title:
+    - "Catchy title. Reviewer 2 called it \"overclaiming.\""
+  pub-thumb:
+    - "Nice figure. Reviewers looked at it for four seconds."
+  code:
+    - "Go ahead, click it. I missed it by 40 pixels last time."
+  paper:
+    - "The paper. Skip straight to Figure 1, like everyone else."
+  dataset:
+    - "A dataset! Please cite responsibly."
+  demo:
+    - "Live websites for fake companies. Please don't try to buy anything."
+  nav-publications:
+    - "The publications page: same papers, more whitespace."
+  nav-services:
+    - "Services: where he reviews other people's agents. Judgmentally."
+  nav-cv:
+    - "Clicking this is the most productive thing you'll do today."
+  phone:
+    - "You can call. He's probably in a meeting with a GPU."
+  email:
+    - "Written as \"(at)\" to fool scrapers. I'm a scraper. I'm not fooled, just polite."
+
+sections:
+  about:
+    - "\"Adapt without being retrained from scratch.\" Bold words from someone who reruns the whole pipeline after changing one seed."
+    - "Fun fact: I am one of the multimodal agents he's trying to make more capable. Be patient with both of us."
+  news:
+    - "Top 8% reviewer? So that's where Reviewer 2's confidence comes from."
+    - "A fellowship! Finally, funding for the GPUs and the coffee. Mostly the coffee."
+  publications:
+    - "Two of these are about web agents. I see what you're doing, and I'm flattered."
+    - "I tried clicking [Code] on one of these. Missed by 40 pixels."
+  contact:
+    - "Yes, that's a real phone number. No, he won't pick up. He's babysitting a training run."
+    - "Before you email: he's already open to collaborations. No need to warm him up."
+  papers:
+    - "All of his papers, in one place. The rest are still in the \"future work\" section."
+  reviewing:
+    - "Every reviewer on this list has, at some point, been Reviewer 2. Statistically."
+  cv:
+    - "A CV! The only document he's revised more than his papers."
+
+idle:
+  - "Still here? I respect the patience. Most agents would have timed out by now."
+  - "Minh is thinking about starting a blog. Mostly about baking."
+  - "You've been idle for a while. Should I mark this task as complete?"
+  - "Tip: the arrow next to Reviewer 2 never runs out. Neither does Reviewer 2."
+  - "Want a tour? I'll only misclick once. Probably."
+  - "I could summarize this page for you, but I'd hallucinate a fourth paper."
+  - "If I go quiet, it's not you. It's my context window."

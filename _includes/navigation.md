@@ -1,8 +1,5 @@
 {% for link in site.data.navigation.main %}
-  {% if link.right %}
-    <a class="normal right" href="../{{ link.url }}">{{ link.title }}</a>
-    {% else %}
-    <a class="normal" href="../{{ link.url }}">{{ link.title }}</a>
-  {% endif %}
+  {% assign href = link.url | relative_url %}
+  {% unless forloop.first %}<span class="op" aria-hidden="true">+</span>{% endunless %}
+  <a href="{{ href }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
 {% endfor %}
-

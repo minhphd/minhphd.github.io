@@ -1,17 +1,38 @@
-<h1 id="services"></h1>
+<header class="intro">
+  <h1>Services</h1>
+  <p class="affil">Reviewing and program committee work.</p>
+</header>
 
-<h2 style="margin: 60px 0px 10px;">Services</h2>
-
-<h4 style="margin:0 10px 0;">Conference Reviewers</h4>
-
-<ul style="margin:0 0 5px;">
-  <li><a href="https://neurips.cc/Conferences/2026"><autocolor>Conference on Neural Information Processing Systems (NeurIPS) — Reviewer, 2026</autocolor></a> <strong><i style="color:#e74d3c; font-weight:600">Top Reviewer (top 8%)</i></strong></li>
-  <li><a href="https://lrec2026.info/"><autocolor>Language Resources and Evaluation Conference (LREC) — Reviewer, 2026</autocolor></a></li>
-  <li><a href="https://aistats.org/"><autocolor>International Conference on Artificial Intelligence and Statistics (AISTATS) — Reviewer, 2026</autocolor></a></li>
-  <li><a href="https://aaai.org/conference/aaai/aaai-26/"><autocolor>AAAI Conference on Artificial Intelligence (AAAI) — Program Committee, 2026</autocolor></a></li>
-  <li><a href="https://www3.cs.stonybrook.edu/~icdm2025/index.html"><autocolor>IEEE International Conference on Data Mining (ICDM) Demo Track — Program Committee, 2025</autocolor></a></li>
-  <!--
-  <li><a href="https://mmasia2021.uqcloud.net/"><autocolor>ACM MM Asia 2020-2021</autocolor></a></li>
-  <li><a href="http://www.acml-conf.org/2021/"><autocolor>ACML 2021</autocolor></a></li>  
-  -->
-</ul>
+<section class="section" id="reviewing" style="padding-top: 8px;">
+  <h2 class="section-head"><span class="section-number">01</span>Conference reviewing</h2>
+  <ul class="entries">
+    <li>
+      <span><a class="link" href="https://aistats.org/">International Conference on Artificial Intelligence and Statistics (AISTATS)</a><span class="role">Reviewer</span></span>
+      <span class="year">2027</span>
+    </li>
+    <li>
+      <span><a class="link" href="https://aaai.org/conference/aaai/aaai-27/">AAAI Conference on Artificial Intelligence (AAAI)</a><span class="role">Reviewer</span></span>
+      <span class="year">2027</span>
+    </li>
+    <li>
+      <span><a class="link" href="https://neurips.cc/Conferences/2026">Conference on Neural Information Processing Systems (NeurIPS)</a><span class="role">Reviewer</span><span class="award">Top Reviewer &middot; top 8%</span></span>
+      <span class="year">2026</span>
+    </li>
+    <li>
+      <span><a class="link" href="https://lrec2026.info/">Language Resources and Evaluation Conference (LREC)</a><span class="role">Reviewer</span></span>
+      <span class="year">2026</span>
+    </li>
+    <li>
+      <span><a class="link" href="https://aistats.org/">International Conference on Artificial Intelligence and Statistics (AISTATS)</a><span class="role">Reviewer</span></span>
+      <span class="year">2026</span>
+    </li>
+    <li>
+      <span><a class="link" href="https://aaai.org/conference/aaai/aaai-26/">AAAI Conference on Artificial Intelligence (AAAI)</a><span class="role">Program Committee</span></span>
+      <span class="year">2026</span>
+    </li>
+    <li>
+      <span><a class="link" href="https://www3.cs.stonybrook.edu/~icdm2025/index.html">IEEE International Conference on Data Mining (ICDM), Demo Track</a><span class="role">Program Committee</span></span>
+      <span class="year">2025</span>
+    </li>
+  </ul>
+</section>

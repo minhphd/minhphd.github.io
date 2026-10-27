@@ -1,5 +1,18 @@
 main:
 
+  - title: "Back to Basics: A Skill-Centric Approach to Generalist Web Agents"
+    authors: <strong>Minh Pham Dinh</strong>, Md Farhan Ishmam, Hernan Yupanqui, Reaz Hassan Joarder, Kenneth Marino
+    conference_short: Preprint
+    conference: arXiv preprint arXiv:2610.35823, 2026.
+    pdf: https://arxiv.org/abs/2610.35823
+    website: https://minhphd.github.io/miniweb/
+    code: https://github.com/miniweb-site/MiniWeb
+    data: https://huggingface.co/datasets/sparklabuofu/MiniWeb
+    demo: https://huggingface.co/spaces/sparklabuofu/MiniWeb-demo
+    image: /assets/img/publications/miniweb-method.png
+    thumb_note: "Nice figure. Took Farhan a week to make."
+    selected: true
+
   - title: "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
     authors: Md Farhan Ishmam, <strong>Minh Pham Dinh</strong>, Kenneth Marino
     conference_short: Preprint
@@ -8,6 +21,8 @@ main:
     website: https://webmix-hyper.github.io/
     code: https://github.com/sparklabutah/hyperweb
     image: /assets/img/publications/webmix.png
+    thumb_note: "Nice figure. Took Farhan a week to make."
+    selected: true
 
   - title: "DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue"
     authors: <strong>Minh Pham Dinh</strong>, Michael G Yankoski, Munira Syed, Trenton W. Ford
@@ -19,3 +34,4 @@ main:
     # page: https://imagenet3d.github.io/
     image: https://repository-images.githubusercontent.com/466027448/2802586b-a1a7-4ad0-a67e-248ad7e121c7
     citations: 3
+    selected: true

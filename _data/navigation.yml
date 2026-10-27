@@ -5,16 +5,16 @@ main:
   #   right: true 
 
   - title: "Home"
-    url: ./
+    url: /
 
   - title: "Publications"
-    url: publications/
+    url: /publications/
 
   - title: "Services"
-    url: services/
+    url: /services/
 
   - title: "CV"
-    url: cv/
+    url: /cv/
     
   # - title: "Talks"
   #   url: talks/

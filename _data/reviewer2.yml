@@ -1,0 +1,66 @@
+# Reviewer 2 quotes. One is picked at random under the name on the home page;
+# the ↻ button shows another. Replace these placeholders with real lines from your reviews.
+
+- quote: "The authors claim this is the first work to address this problem. This is false (Schmidhuber et al, 1999)."
+
+- quote: "I am not convinced that the problem is important, although I agree that it is technically challenging."
+
+- quote: "The authors have not compared against our method. Our method is not directly related, but the comparison is essential."
+
+- quote: "The paper is well written, which unfortunately makes the lack of novelty even more apparent."
+
+- quote: "I found the paper difficult to follow. The authors should simplify the presentation without omitting any technical details."
+
+- quote: "The proposed approach seems reasonable, but I am not sure why it is necessary."
+
+- quote: "The authors report a 1.2% improvement. I do not consider this significant, despite the reported statistical significance."
+
+- quote: "The improvement is too small to be meaningful. However, the paper would be more convincing if the improvement were larger."
+
+- quote: "The authors should evaluate on more datasets, including datasets that do not yet exist."
+
+- quote: "The method is computationally expensive. Please compare against a method that is computationally expensive for different reasons."
+
+- quote: "I have concerns about the scalability of the approach. The authors should demonstrate that it scales to a scale that is not currently available."
+
+- quote: "The paper lacks a compelling real-world application. The authors should demonstrate one without changing the scope of the paper."
+
+- quote: "The writing is clear, but I disagree with the framing, the methodology, the experiments, and the conclusions."
+
+- quote: "The authors should cite more recent work. In particular, several papers published after the submission deadline are highly relevant."
+
+- quote: "The comparison is unfair because the proposed method uses a different architecture. The authors should use the same architecture, while preserving the novelty of their approach."
+
+- quote: "The authors have not demonstrated that every design choice is optimal. Please provide a justification for each hyperparameter."
+
+- quote: "Isn't this just Engineer?"
+
+- quote: "The proposed method is essentially a combination of existing ideas. The authors should explain why combining existing ideas is novel."
+
+- quote: "The authors should include negative results. The absence of negative results makes me question the completeness of the evaluation."
+
+- quote: "The conclusions overstate the findings. Please make the claims more conservative while emphasizing the significance of the contribution."
+
+- quote: "The claims are appropriately conservative, but this makes the contribution seem less significant."
+
+- quote: "I would lean toward acceptance if the authors could address my concerns. Unfortunately, addressing my concerns would require substantial additional work."
+
+- quote: "Thanks for the detail rebuttal. The author has addressed my concerns. I am keeping my scores"
+
+- quote: "The rebuttal clarifies the authors' position but does not change my assessment."
+
+- quote: "I am unable to recommend acceptance at this time, primarily because I cannot confidently recommend acceptance."
+
+- quote: "The paper is borderline. I would be comfortable with either decision, provided the decision is rejection."
+
+- quote: "Overall, the work is technically sound. However, I do not believe it meets the bar for this venue."
+
+- quote: "Confidence: 5. I am certain that my uncertainty is justified."
+
+- quote: "Novelty: moderate. Significance: unclear. Recommendation: reject."
+
+- quote: "The paper is not bad, per se. I simply do not believe it should be accepted."
+
+- quote: "I recommend rejection, but I encourage the authors to submit this work to a venue with different reviewers."
+
+- quote: "I would like to see a stronger motivation"

@@ -26,9 +26,12 @@ keywords:
 canonical: https://minhphd.github.io
 
 description: >
-  Minh Pham-Dinh is an incoming PhD student in Computer Science at the University of Utah.
-  His research focuses on embodied AI, robot learning, vision-language models,
-  scene graph representations, and structured knowledge for intelligent agents.
+  Minh Pham-Dinh is a PhD student in Computer Science at the University of Utah.
+  His research focuses on enhancing the general capabilities and adaptation of
+  multimodal agents, from web agents to agents that act in the physical world.
+
+# Experimental whiteboard theme (Expo marker colors). Set to false to go back to the regular look.
+whiteboard: false
 
 # The option is used to enable the Illinois template.
 enable_hopkins_logo: false

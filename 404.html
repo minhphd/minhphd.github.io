@@ -1,55 +1,73 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>404 Not Found</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+---
+layout: default
+title: Page not found
+permalink: /404.html
+---
 
-        <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
-        <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
-        <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+<header class="intro">
+  <h1><span class="circled pink is-drawn">404</span> &middot; grasp failed</h1>
+  <p class="affil">The page you were looking for slipped out of the gripper. The robot would like another try.</p>
+</header>
 
-        <link rel="stylesheet" href="./assets/css/style.css">
+<section class="lost" style="padding-top: 8px;">
+  <svg class="lost-scene" id="lost-scene" viewBox="0 0 320 200" role="img" aria-label="A robot arm trying to pick up a dropped page labeled 404">
+    <line x1="10" y1="181" x2="310" y2="181" stroke="#ECE5D8" stroke-width="2"/>
+    <g class="lost-paper">
+      <g transform="rotate(-6 215 174)">
+        <rect x="193" y="166" width="44" height="14" rx="1.5" fill="#fff" stroke="#D5CCBB"/>
+        <text x="215" y="176.5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#C2410C">404</text>
+      </g>
+    </g>
+    <rect x="38" y="160" width="54" height="21" rx="4" fill="#E5E7EB"/>
+    <rect x="50" y="150" width="30" height="12" rx="3" fill="#CBD0D6"/>
+    <g class="lost-arm">
+      <line x1="65" y1="150" x2="140" y2="80" stroke="#2E3440" stroke-width="12" stroke-linecap="round"/>
+      <line x1="140" y1="80" x2="215" y2="110" stroke="#C2410C" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="65" cy="150" r="9" fill="#FFFFFF" stroke="#2E3440" stroke-width="3"/>
+      <circle cx="140" cy="80" r="8" fill="#FFFFFF" stroke="#2E3440" stroke-width="3"/>
+      <circle cx="215" cy="110" r="6" fill="#2E3440"/>
+      <path d="M203 112h24" stroke="#2E3440" stroke-width="4" stroke-linecap="round"/>
+      <path class="lost-finger lost-finger-l" d="M205 112v22" stroke="#2E3440" stroke-width="4" stroke-linecap="round"/>
+      <path class="lost-finger lost-finger-r" d="M225 112v22" stroke="#2E3440" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </svg>
 
+  <div class="lost-actions">
+    <button type="button" class="pill-btn" id="retry"><i class="fa-solid fa-rotate-right"></i><span class="bracket">[retry grasp]</span></button>
+    <a class="bracket" href="{{ '/' | relative_url }}">[or just go home]</a>
+  </div>
+  <ol class="lost-log" id="lost-log" aria-live="polite"></ol>
+</section>
 
-
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-		<header id="header">
-		</header>
-
-		<!-- Main -->
-			<div class="wrapper">
-
-                    <header>
-                    <center>
-                    <br>
-                    <h1><strong>404 Not Found</strong><br></h1>
-                    </center>
-                    </header>
-
-					<section>
-                        <br>
-						<h3>This is not the web page you are looking for.</h3>
-                        <br>
-
-						<h3>You'll be redirected to the homepage in 5 seconds.</h3>
-
-						<script language="javascript">
-						window.setTimeout("window.location.href='/'", 5000);
-						</script>
-                      </section>
-
-			</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
-
-		<!-- Scripts -->
-        <script src="javascripts/scale.fix.js"></script>
-
-	</body>
-</html>
+<script>
+  (function () {
+    var scene = document.getElementById('lost-scene');
+    var log = document.getElementById('lost-log');
+    var btn = document.getElementById('retry');
+    var home = '{{ "/" | relative_url }}';
+    var tries = 0;
+    var outcomes = [
+      { cls: 'is-fail', msg: 'attempt 1 · grasp failed: page slipped. (Confidence was 0.97.)' },
+      { cls: 'is-fail is-fail-2', msg: 'attempt 2 · grasp failed: object is a 404. Reconsidering life choices.' },
+      { cls: 'is-success', msg: 'attempt 3 · grasp succeeded! Carrying you home...' }
+    ];
+    btn.addEventListener('click', function () {
+      if (tries >= outcomes.length) return;
+      var o = outcomes[tries++];
+      btn.disabled = true;
+      scene.setAttribute('class', 'lost-scene');
+      void scene.getBoundingClientRect();
+      scene.setAttribute('class', 'lost-scene ' + o.cls);
+      setTimeout(function () {
+        var li = document.createElement('li');
+        li.textContent = o.msg;
+        log.appendChild(li);
+        if (o.cls === 'is-success') {
+          setTimeout(function () { window.location.href = home; }, 1400);
+        } else {
+          btn.disabled = false;
+        }
+      }, 1300);
+    });
+  })();
+</script>

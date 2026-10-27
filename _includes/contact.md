@@ -1,8 +1,8 @@
-<h2 style="margin: 60px 0px 10px;">Contact</h2>
-
-Kahlert School of Computing
-<br />
-Salt Lake City, UT 84115
-<br />
-Phone: <a href="tel:+12078303901">207-830-3901</a>
-<br />
+<dl class="contact-grid">
+  <dt>Email</dt>
+  <dd data-a7="email">{{ site.email }}</dd>
+  <dt>Office</dt>
+  <dd>Kahlert School of Computing<br>Salt Lake City, UT 84115</dd>
+  <dt>Phone</dt>
+  <dd data-a7="phone"><a class="link" href="tel:+12078303901">207-830-3901</a></dd>
+</dl>
