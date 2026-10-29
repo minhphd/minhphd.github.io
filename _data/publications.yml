@@ -1,16 +1,23 @@
 main:
 
+  - title: "READ: What Makes a Pretrained VLA Teachable by Demonstration?"
+    authors: Dai-Jie Wu, <strong>Minh Pham Dinh</strong>, Kenneth Marino
+    conference_short: CoRL 2026 Workshop
+    conference: CoRL 2026 Workshop on Pretrain to Adapt.
+    website: https://read-demos-vla.github.io/
+    image: /assets/img/publications/read-diagram.gif
+    selected: true
+
   - title: "Back to Basics: A Skill-Centric Approach to Generalist Web Agents"
     authors: <strong>Minh Pham Dinh</strong>, Md Farhan Ishmam, Hernan Yupanqui, Reaz Hassan Joarder, Kenneth Marino
     conference_short: Preprint
     conference: arXiv preprint arXiv:2610.35823, 2026.
     pdf: https://arxiv.org/abs/2610.35823
     website: https://minhphd.github.io/miniweb/
-    code: https://github.com/miniweb-site/MiniWeb
+    code: https://github.com/sparklabutah/MiniWeb
     data: https://huggingface.co/datasets/sparklabuofu/MiniWeb
     demo: https://huggingface.co/spaces/sparklabuofu/MiniWeb-demo
     image: /assets/img/publications/miniweb-method.png
-    thumb_note: "Nice figure. Took Farhan a week to make."
     selected: true
 
   - title: "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
@@ -21,7 +28,6 @@ main:
     website: https://webmix-hyper.github.io/
     code: https://github.com/sparklabutah/hyperweb
     image: /assets/img/publications/webmix.png
-    thumb_note: "Nice figure. Took Farhan a week to make."
     selected: true
 
   - title: "DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue"
