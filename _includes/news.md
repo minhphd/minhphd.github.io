@@ -1,6 +1,6 @@
 <div class="pinboard">
   <ul class="pins">
-    <li><time>Oct 2026</time><span><a href="https://read-demos-vla.github.io/">READ</a> accepted to the CoRL 2026 Workshop on Pretrain to Adapt.</span></li>
+    <li><time>Oct 2026</time><span><a href="https://read-demos-vla.github.io/">READ</a> accepted to two CoRL 2026 workshops: <a href="https://corl2026-robotcl.github.io/">Pretrain to Adapt</a> and <a href="https://corl2026-memory.github.io/">RoboMem</a>.</span></li>
 
     <li><time>Oct 2026</time><span>New preprint: <a href="https://minhphd.github.io/miniweb/">MiniWeb</a>, a skill-centric approach to generalist web agents. Now on <a href="https://arxiv.org/abs/2610.35823">arXiv</a>.</span></li>
 

@@ -2,8 +2,8 @@ main:
 
   - title: "READ: What Makes a Pretrained VLA Teachable by Demonstration?"
     authors: Dai-Jie Wu, <strong>Minh Pham Dinh</strong>, Kenneth Marino
-    conference_short: CoRL 2026 Workshop
-    conference: CoRL 2026 Workshop on Pretrain to Adapt.
+    conference_short: CoRL 2026 Workshops
+    conference: CoRL 2026 Workshops on Pretrain to Adapt and RoboMem.
     website: https://read-demos-vla.github.io/
     image: /assets/img/publications/read-diagram.gif
     selected: true
