@@ -81,19 +81,21 @@
     <script src="{{ '/assets/js/assistant.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
     <script>
-      // Paper clips play only while on screen, and not at all for reduced-motion visitors (they see the poster).
-      (function () {
-        var clips = document.querySelectorAll('video[data-autoplay]');
-        if (!clips.length || !('IntersectionObserver' in window)) return;
-        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) {
-            if (e.isIntersecting) { var p = e.target.play(); if (p && p.catch) p.catch(function () {}); }
-            else e.target.pause();
+      // Paper list: the share button copies the paper's link.
+      document.addEventListener('click', function (e) {
+        var share = e.target.closest('.pub-share');
+        if (!share) return;
+        var url = new URL(share.dataset.url, location.href).href;
+        if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+          navigator.share({ url: url }).catch(function () {});
+        } else if (navigator.clipboard) {
+          navigator.clipboard.writeText(url).then(function () {
+            share.classList.add('is-copied');
+            share.setAttribute('aria-label', 'Link copied');
+            setTimeout(function () { share.classList.remove('is-copied'); share.setAttribute('aria-label', 'Copy link'); }, 1600);
           });
-        }, { threshold: .25 });
-        clips.forEach(function (v) { io.observe(v); });
-      })();
+        }
+      });
     </script>
 
     <script>

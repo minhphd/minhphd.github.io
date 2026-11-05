@@ -6,6 +6,9 @@ main:
     conference: CoRL 2026 Workshops on Pretrain to Adapt and RoboMem.
     website: https://read-demos-vla.github.io/
     image: /assets/img/publications/read-diagram.gif
+    cover: /assets/img/publications/read-cover.jpg
+    date: 2026-10-20
+    tldr: Show a pretrained VLA five demonstrations of a new task and it performs the task with no gradient steps, matching per-task fine-tuning on held-out tasks.
     selected: true
 
   - title: "Back to Basics: A Skill-Centric Approach to Generalist Web Agents"
@@ -18,6 +21,9 @@ main:
     data: https://huggingface.co/datasets/sparklabuofu/MiniWeb
     demo: https://huggingface.co/spaces/sparklabuofu/MiniWeb-demo
     image: /assets/img/publications/miniweb-method.png
+    cover: /assets/img/publications/miniweb-cover.jpg
+    date: 2026-10-26
+    tldr: Compact browser agents succeed on unseen websites by practicing reusable interaction skills, then composing them with a planner to solve full tasks.
     selected: true
 
   - title: "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
@@ -28,6 +34,9 @@ main:
     website: https://webmix-hyper.github.io/
     code: https://github.com/sparklabutah/hyperweb
     image: /assets/img/publications/webmix.png
+    cover: /assets/img/publications/webmix-cover.jpg
+    date: 2026-10-15
+    tldr: Web agents adapt to unfamiliar websites and redesigns by scouting the interface and remixing existing adapters, with no retraining on the target.
     selected: true
 
   - title: "DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue"
@@ -39,5 +48,7 @@ main:
     code: https://github.com/minhphd/DAVIS
     # page: https://imagenet3d.github.io/
     image: https://repository-images.githubusercontent.com/466027448/2802586b-a1a7-4ad0-a67e-248ad7e121c7
-    citations: 3
+    cover: /assets/img/publications/davis-cover.jpg
+    date: 2025-11-05
+    tldr: A science agent that plans by querying a structured, temporal knowledge graph in a multi-turn inner monologue, improving on 8 of 9 ScienceWorld subjects.
     selected: true

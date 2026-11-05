@@ -405,66 +405,106 @@ a:hover > .bracket { text-decoration: underline; text-underline-offset: 3px; }
 .older[open] summary { margin-bottom: 4px; }
 
 /* ---------- Publications ---------- */
+/* A compact paper list: a crop of the first page, title, authors, one-line TL;DR, then a row of link pills. */
 
 .pubs { display: grid; }
 .pub {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 28px;
-  padding: 22px 0;
-  border-bottom: 1px dashed var(--line);
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
 }
 .pub:first-child { padding-top: 6px; }
 .pub:last-child { border-bottom: 0; }
-.pub-thumb { position: relative; align-self: start; }
+.pub-thumb { display: block; align-self: start; }
 .pub-thumb img,
-.pub-thumb video {
+.pub-cover-blank {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 3px;
-  padding: 6px;
-  transition: border-color .15s, transform .25s;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, .06);
+  transition: border-color .15s, transform .25s, box-shadow .25s;
 }
-/* Clips fill their frame edge to edge */
-.pub-thumb video { object-fit: cover; padding: 0; background: #121212; }
+.pub-cover-blank {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: var(--tint);
+  font: 600 13px/1.35 var(--sans);
+  color: var(--muted);
+}
+.pub-cover-blank i { font-size: 15px; color: var(--edge); }
 .pub-thumb:hover img,
-.pub-thumb:hover video { border-color: var(--edge); transform: rotate(-1deg) scale(1.02); }
-.pub-badge {
+.pub-thumb:hover .pub-cover-blank {
+  border-color: var(--edge);
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 6px 14px rgba(17, 17, 17, .1);
+}
+
+.pub-title { margin: 0 0 8px; font: 500 20px/1.3 var(--serif); text-wrap: pretty; }
+.pub-title a:hover { color: var(--accent); }
+
+.pub-authors { margin: 0 0 8px; font: 14.5px/1.5 var(--sans); color: #4B5563; }
+.pub-authors strong { color: var(--ink); font-weight: 600; }
+
+.pub-tldr { margin: 0 0 12px; font: 15px/1.55 var(--sans); color: var(--muted); }
+
+.pub-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
+.pub-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0; }
+.pub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 11px;
+  font: 500 13px/1 var(--sans);
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.pub-pill i { font-size: 13px; color: var(--muted); transition: color .15s; }
+.pub-pill:hover { border-color: var(--edge); color: var(--accent); }
+.pub-pill:hover i { color: var(--accent); }
+.pub-share { width: 30px; padding: 0; justify-content: center; }
+.pub-share.is-copied { color: var(--accent); border-color: var(--accent); }
+.pub-share.is-copied i { color: var(--accent); }
+.pub-share { position: relative; }
+.pub-share.is-copied::after {
+  content: "link copied";
   position: absolute;
-  left: 8px;
-  top: 8px;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  font: 500 11px/1 var(--mono);
+  color: #fff;
+  background: var(--ink);
+  padding: 5px 7px 4px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.pub-date { margin-left: 6px; font: 13px/1 var(--sans); color: var(--muted); white-space: nowrap; }
+
+.pub-venue { display: flex; align-items: center; gap: 12px; margin: 0; }
+.pub-badge {
   font: 500 11px/1 var(--mono);
   letter-spacing: .3px;
   color: #fff;
   background: var(--ink);
   padding: 5px 7px 4px;
   border-radius: 2px;
+  white-space: nowrap;
 }
 .pub-badge.is-preprint { color: var(--ink); background: #fff; box-shadow: inset 0 0 0 1.5px var(--ink); }
-.pub-new {
-  position: absolute;
-  right: -12px;
-  top: -14px;
-  font: 700 13px/1 var(--mono);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--pen);
-  background: rgba(251, 248, 243, .92);
-  border: 2px solid currentColor;
-  padding: 5px 7px 4px;
-  border-radius: 3px;
-  transform: rotate(12deg);
-}
-.pub-title { margin: 0 0 6px; font: 500 21px/1.3 var(--serif); text-wrap: pretty; }
-.pub-title a:hover { color: var(--accent); }
-.pub-authors { margin: 0 0 4px; font: 15px/1.55 var(--sans); color: var(--muted); }
-.pub-authors strong { color: var(--ink); font-weight: 600; }
-.pub-venue { margin: 0 0 10px; font-size: 16px; font-style: italic; color: var(--ink); }
-.pub-links { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; margin: 0; }
 .pub-note {
   font: 600 12px/1.6 var(--sans);
   letter-spacing: .4px;
@@ -805,9 +845,9 @@ a:hover > .bracket { text-decoration: underline; text-underline-offset: 3px; }
   .intro-home { grid-template-columns: minmax(0, 1fr) 170px; gap: 24px; padding-bottom: 28px; }
   .photo { padding: 6px 6px 18px; }
   .photo .note { display: none; }
-  .pub-new { right: auto; left: calc(100% - 40px); }
-  .pub { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  .pub-thumb { max-width: 480px; }
+  .pub { grid-template-columns: 120px minmax(0, 1fr); gap: 14px; }
+  .pub-title { font-size: 18px; }
+  .pub-tldr { font-size: 14.5px; }
   .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .contact-grid dd { margin-bottom: 10px; }
   .doc-frame { height: 70vh; }
